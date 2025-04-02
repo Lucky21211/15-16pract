@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аутентификация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Вход / Регистрация</h2>
+        <div id="auth-section">
+            <input type="text" id="username" placeholder="Логин">
+            <input type="password" id="password" placeholder="Пароль">
+            <button id="register-btn">Регистрация</button>
+            <button id="login-btn">Войти</button>
+            
+            <p id="error-message" class="error hidden"></p>
+        </div>
+        <div id="profile-section" class="hidden">
+            <h2>Личный кабинет</h2>
+            <p>Добро пожаловать, <span id="username-display"></span>!</p>
+            <button id="logout-btn">Выйти</button>
+            <button id="toggle-theme">Сменить тему</button>
+            <button id="fetch-data">Обновить данные</button>
+            <p id="data-display"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
